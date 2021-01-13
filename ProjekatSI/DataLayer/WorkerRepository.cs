@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Shared.Interfaces.Repository;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataLayer
 {
-    public class WorkerRepository
+    public class WorkerRepository : IWorkerRepository
     {
         public List<Worker> GetAllWorkers()
         {
