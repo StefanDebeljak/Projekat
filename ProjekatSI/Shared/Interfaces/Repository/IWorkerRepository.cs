@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessLayer
+namespace Shared.Interfaces.Repository
 {
-    public class Class1
+    public interface IWorkerRepository
     {
+        public List<Worker> GetAllWorkers();
+
     }
 }

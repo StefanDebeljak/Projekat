@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Shared.Interfaces.Repository;
+using System;
 using System.Collections.Generic;
 using System.Data.Common;
 using System.Data.SqlClient;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataLayer
 {
-    public class ArticleRepository
+    public class ArticleRepository : IArticleRepository
     {
         public List<Article> GetAllArticles()
         {
@@ -61,7 +62,6 @@ namespace DataLayer
 
             DBConnection.CloseConnection();
             return result;
-
         }
     }
 }
