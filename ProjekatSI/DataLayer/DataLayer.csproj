@@ -49,6 +49,8 @@
     <Compile Include="Models\Receipt.cs" />
     <Compile Include="Models\ReceiptItem.cs" />
     <Compile Include="Models\Worker.cs" />
+    <Compile Include="ReceiptItemsRepository.cs" />
+    <Compile Include="ReceiptRepository.cs" />
     <Compile Include="WorkerRepository.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
